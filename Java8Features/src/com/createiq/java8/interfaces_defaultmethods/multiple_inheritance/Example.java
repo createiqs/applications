@@ -13,6 +13,8 @@ public class Example implements MyInterface, MyInterface2 {
 	// Implementation of duplicate default method
 	public void newMethod() {
 		System.out.println("Implementation of default method");
+		MyInterface.super.newMethod();
+		MyInterface2.super.newMethod();
 	}
 
 	public static void main(String[] args) {
